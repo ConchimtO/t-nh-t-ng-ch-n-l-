@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFE60606">
+        <Label x:Name="label" Content="nhập N :" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="95" Height="35" FontSize="20"/>
+        <RadioButton x:Name="radioButton" Content="Tổng" HorizontalAlignment="Left" Height="38" Margin="254,157,0,0" VerticalAlignment="Top" Width="125" FontSize="20" />
+        <RadioButton x:Name="radioButton1" Content=" chẵn" HorizontalAlignment="Left" Margin="252,195,0,0" VerticalAlignment="Top" FontSize="20" Height="35" Width="127" RenderTransformOrigin="1.134,1.833"/>
+        <RadioButton x:Name="radioButton2" Content=" lẻ" HorizontalAlignment="Left" Margin="254,235,0,0" VerticalAlignment="Top" Height="41" Width="126" FontSize="20"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="34" Margin="127,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontSize="20" Background="#FFE4E4C3" FontWeight="Bold"/>
+        <TextBlock FontSize="20px" x:Name="txblHienThi" HorizontalAlignment="Left" Margin="412,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="286" Height="124" Foreground="#FF170303" Background="#FFB9CB06"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="530,122,0,0" TextWrapping="Wrap" Text="Kết quả " VerticalAlignment="Top" Height="51" Width="79" Foreground="#FF2B9B01"/>
+        <Button x:Name="button" Content="Tính " HorizontalAlignment="Left" Margin="119,82,0,0" VerticalAlignment="Top" Width="113" Click="Button_Click" RenderTransformOrigin="0.5,0.5" Height="52" Background="#FFF3A702">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.489"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="button1" Content="Hủy" HorizontalAlignment="Left" Margin="282,83,0,0" VerticalAlignment="Top" Width="115" Click="Button1_Click" Height="48" Background="#FF01EADF"/>
+
+    </Grid>
+</Window>
